@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url(bg_bggenerator_com.png);
+    background-size: cover;
+}
+
+/* Conteneur */
+#wrapper {
+    padding: 100px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+/* Affichage du chrono */
+#chrono {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 2rem;
+}
+
+/* Boutons du chrono */
+button {
+    font-size: 25px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 3px rgb(175, 175, 175)
+}
+button:active {
+    box-shadow: 0 0px rgb(175, 175, 175);
+    transform: translateY(3px);
+}
+
+button:not(:last-child) {
+    background-color: #d1d1d1;
+    color: white;
+    margin-right: 15px;
+}
+button:not(:last-child):hover {
+    background-color: #c4c4c4;
+}
+
+button:nth-child(2) {
+    background-color: #ff8b8b;
+    color: white;
+}
+button:nth-child(2):hover {
+    background-color: rgb(233, 116, 116);
+    
+}
+
+button:last-child {
+    background-color: #3a6eff;
+    color: white;
+}
+button:last-child:hover {
+    background-color: #315eda;
+}
